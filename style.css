@@ -1,0 +1,40 @@
+body {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+#start {
+    font-size: 16px;
+    padding: 8px;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+#grid {
+    display: flex;
+    flex: 1;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.cube {
+    border: none;
+    padding: 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.cube:hover {
+    background-color: lime;
+}
+
+.painted {
+    background-color: lime;
+}
