@@ -22,9 +22,23 @@ function start(e) {
     for (let i = 0; i < ROUNDS; i ++) {
     addDivs(columns[i], 'cube', ROUNDS);
     }
+
+    const cube = 'cube';
+    pickAll(cube);
+
 }
 
 const startBtn = document.querySelector('#start');
 startBtn.addEventListener('click', start);
 
 //////
+
+
+function pickAll (variable) {
+    const variables = document.querySelectorAll (`.${variable}`)
+    variables.forEach((i) => {
+        i.addEventListener('click', () => {
+            i.classList.toggle('painted');
+        });
+    })
+};
